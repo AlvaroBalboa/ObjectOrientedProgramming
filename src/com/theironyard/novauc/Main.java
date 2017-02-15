@@ -6,13 +6,19 @@ import java.util.List;
 
 public class Main {
 
-     public  static List<Item> itemInventory = new ArrayList<Item>();
-     public static RandomCrafter craftMe = new RandomCrafter();
+    public static List<Item> itemInventory = new ArrayList<Item>();
+    public static RandomCrafter craftMe = new RandomCrafter();
+    public static FindItem finder = new FindItem();
 
-     public static void main(String[] args) {
+    public static void main(String[] args) {
 
-       //List<Item> itemInventory = new ArrayList<Item>();
-        FindItem find = new FindItem();
-        find.findRandomItem();
-     }
+        finder.findRandomItem();
+
+
+
+        //List<Item> itemInventory = new ArrayList<Item>();
+        //FindItem find = new FindItem();
+        //find.findRandomItem();
+        //f//ind.whichArmor();
+    }
 }

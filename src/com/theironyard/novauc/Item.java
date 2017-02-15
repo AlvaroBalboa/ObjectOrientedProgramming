@@ -5,8 +5,7 @@ package com.theironyard.novauc;
  */
 public class Item {
     public int value,weight,damage,damageReduction;
-    public String rarity,slot,buff,type,name;
-    public boolean hasBuffActive;
+    public String rarity,slot,type,name;
 
 //    public void showStats(){
 //

@@ -13,9 +13,7 @@ public class CraftingMaterials extends Item {
         this.damageReduction = damageReduction;
         this.rarity = rarity;
         this.slot = slot;
-        this.buff = buff;
         this.type = type;
         this.name = name;
-        this.hasBuffActive = hasBuffActive;
     }
 }

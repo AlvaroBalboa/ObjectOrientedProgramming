@@ -5,16 +5,14 @@ package com.theironyard.novauc.Armor;
  */
 public class ClothArmor extends Armor {
 
-    public ClothArmor(int value, int weight, int damage, int damageReduction, String rarity, String slot, String buff, String type, String name, boolean hasBuffActive) {
+    public ClothArmor(int value, int weight, int damage, int damageReduction, String rarity, String slot, String type, String name) {
         this.value = value;
         this.weight = weight;
         this.damage = damage;
         this.damageReduction = damageReduction;
         this.rarity = rarity;
         this.slot = slot;
-        this.buff = buff;
         this.type = type;
         this.name = name;
-        this.hasBuffActive = hasBuffActive;
     }
 }
