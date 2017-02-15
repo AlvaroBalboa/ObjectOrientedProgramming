@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by souporman on 2/14/17.
  */
-public class FindItem {
+public class FindItem extends Item{
 
     public void monsterSlayer(){
         boolean adventure=true;
@@ -21,6 +21,7 @@ public class FindItem {
                 case "y":
                     System.out.println("You have slayed the dragon and he has dropped some loot for you to pick up");
                     findRandomItem();
+                    System.out.println("You travel on and encounter another dragon");
                     break;
                 case "n":
                     System.out.println("You are the worst adventurer this side of Westeros");
@@ -30,15 +31,36 @@ public class FindItem {
                 default:
                     System.out.println("You seem to be touched in the head the villagers of the town put you out of your misery");
                     System.exit(0);
-
             }
-            System.out.println("You travel on and encounter another dragon");
         }
         System.out.println("Your adventure has ended and these are your spoils of war");
-        for(Item listitem:Main.itemInventory) {
-
+        for(Item listitem : Main.itemInventory) {
+//            System.out.printf("%d gold pieces, %d stones,%d + to damage modifier, " +
+//                    "%d + to damage reduction, rarity: %s, slot filled: %s, type %s, " +
+//                    "ITEM NAME : %s \n",Main.itemInventory);
+            //int value, int weight, int damage, int damageReduction, String rarity, String slot, String type, String name
+            //Main.something=listitem;
             System.out.println(listitem);
-
+            if(listitem.equals(listitem)){
+//                int weight=Main.something.getWeight();
+//                int value=Main.something.getValue();
+//                int damage=Main.something.getDamage();
+//                int damageReduction=Main.something.getDamageReduction();
+//                String rarity=Main.something.getRarity();
+//                String slot=Main.something.getSlot();
+//                String type=Main.something.getType();
+//                String name=Main.something.getName();
+//
+//                System.out.printf("\nITEM NAME        :%s\n",name);
+//                System.out.printf("ITEM TYPE        :%s\n",type);
+//                System.out.printf("ITEM SLOT        :%s\n",slot);
+//                System.out.printf("ITEM RARITY      :%s\n",rarity);
+//                System.out.printf("ITEM VALUE       :%s GOLD\n",value);
+//                System.out.printf("ITEM WEIGHT      :%s STONE\n",weight);
+//                System.out.printf("ITEM DAMAGE      :%s\n",damage);
+//                System.out.printf("ITEM RESISTANCE  :%s\n",damageReduction);
+                listitem.print();
+            }
         }
     }
 

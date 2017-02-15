@@ -10,6 +10,7 @@ public class Main {
     public static List<Item> itemInventory = new ArrayList<Item>();
     public static RandomCrafter craftMe = new RandomCrafter();
     public static FindItem finder = new FindItem();
+    public static Item something=new Item();
     public static Scanner kb = new Scanner(System.in);
     public static Scanner kb2 = new Scanner(System.in);
     public static Scanner kb3 = new Scanner(System.in);

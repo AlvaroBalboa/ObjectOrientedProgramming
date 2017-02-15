@@ -15,4 +15,105 @@ public class LeatherArmor extends Armor {
         this.type = type;
         this.name = name;
     }
+    @Override
+    public void print() {
+//        int pweight = this.weight;
+//        int pvalue = ;
+//        int pdamage = getDamage();
+//        int pdamageReduction = getDamageReduction();
+//        String prarity = getRarity();
+//        String pslot = getSlot();
+//        String ptype = getType();
+//        String pname = getName();
+
+        System.out.printf("\nITEM NAME        :%s\n", this.name);
+        System.out.printf("ITEM TYPE        :%s\n", this.type);
+        System.out.printf("ITEM SLOT        :%s\n", this.slot);
+        System.out.printf("ITEM RARITY      :%s\n", this.rarity);
+        System.out.printf("ITEM VALUE       :%s GOLD\n", this.value);
+        System.out.printf("ITEM WEIGHT      :%s STONE\n", this.weight);
+        System.out.printf("ITEM DAMAGE      :%s\n", this.damage);
+        System.out.printf("ITEM RESISTANCE  :%s\n", this.damageReduction);
+    }
+
+    @Override
+    public int getValue() {
+        return super.getValue();
+    }
+
+    @Override
+    public int getWeight() {
+        return super.getWeight();
+    }
+
+    @Override
+    public int getDamage() {
+        return super.getDamage();
+    }
+
+    @Override
+    public int getDamageReduction() {
+        return super.getDamageReduction();
+    }
+
+    @Override
+    public String getRarity() {
+        return super.getRarity();
+    }
+
+    @Override
+    public String getSlot() {
+        return super.getSlot();
+    }
+
+    @Override
+    public String getType() {
+        return super.getType();
+    }
+
+    @Override
+    public String getName() {
+        return super.getName();
+    }
+
+    @Override
+    public void setValue(int value) {
+        super.setValue(value);
+    }
+
+    @Override
+    public void setWeight(int weight) {
+        super.setWeight(weight);
+    }
+
+    @Override
+    public void setDamage(int damage) {
+        super.setDamage(damage);
+    }
+
+    @Override
+    public void setDamageReduction(int damageReduction) {
+        super.setDamageReduction(damageReduction);
+    }
+
+    @Override
+    public void setRarity(String rarity) {
+        super.setRarity(rarity);
+    }
+
+    @Override
+    public void setSlot(String slot) {
+        super.setSlot(slot);
+    }
+
+    @Override
+    public void setType(String type) {
+        super.setType(type);
+    }
+
+    @Override
+    public void setName(String name) {
+        super.setName(name);
+
+    }
 }

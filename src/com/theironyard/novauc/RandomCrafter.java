@@ -1,18 +1,18 @@
 package com.theironyard.novauc;
 
-import com.theironyard.novauc.Armor.ClothArmor;
-import com.theironyard.novauc.Armor.LeatherArmor;
-import com.theironyard.novauc.Armor.MailArmor;
-import com.theironyard.novauc.Armor.PlateArmor;
+import com.theironyard.novauc.Armor.*;
+//import com.theironyard.novauc.Armor.LeatherArmor;
+//import com.theironyard.novauc.Armor.MailArmor;
+//import com.theironyard.novauc.Armor.PlateArmor;
 import com.theironyard.novauc.Consumables.Food;
 import com.theironyard.novauc.Consumables.Potions;
-import com.theironyard.novauc.CraftingMaterial.Gem;
-import com.theironyard.novauc.CraftingMaterial.Herb;
-import com.theironyard.novauc.CraftingMaterial.Ore;
-import com.theironyard.novauc.CraftingMaterial.Pelt;
-import com.theironyard.novauc.QuestItem.Heart;
-import com.theironyard.novauc.QuestItem.HolyIdol;
-import com.theironyard.novauc.QuestItem.SacredSword;
+import com.theironyard.novauc.CraftingMaterial.*;
+//import com.theironyard.novauc.CraftingMaterial.Herb;
+//import com.theironyard.novauc.CraftingMaterial.Ore;
+//import com.theironyard.novauc.CraftingMaterial.Pelt;
+import com.theironyard.novauc.QuestItem.*;
+//import com.theironyard.novauc.QuestItem.HolyIdol;
+//import com.theironyard.novauc.QuestItem.SacredSword;
 import com.theironyard.novauc.Weapon.*;
 
 /**
