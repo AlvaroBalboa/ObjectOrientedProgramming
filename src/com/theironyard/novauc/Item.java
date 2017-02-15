@@ -7,8 +7,12 @@ public class Item {
     public int value,weight,damage,damageReduction;
     public String rarity,slot,type,name;
 
-//    public void showStats(){
-//
+    @Override
+    public String toString(){
+        return this.name;
+    }
+//    public int toString(){
+//        return this.value;
 //    }
 
 }

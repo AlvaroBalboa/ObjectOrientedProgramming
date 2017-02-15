@@ -10,35 +10,72 @@ import java.util.List;
  */
 public class FindItem {
 
-    public void 
+    public void monsterSlayer(){
+        boolean adventure=true;
+        System.out.println("Welcome traveler what is your name");
+        String travelerName=Main.kb.nextLine();
+        while(adventure) {
+            System.out.println(travelerName+" will you please slay this Dragon for us [Y/N]");
+            String response = Main.kb2.nextLine().toLowerCase();
+            switch (response) {
+                case "y":
+                    System.out.println("You have slayed the dragon and he has dropped some loot for you to pick up");
+                    findRandomItem();
+                    break;
+                case "n":
+                    System.out.println("You are the worst adventurer this side of Westeros");
+                    System.out.println("Your adventure ends abruptly");
+                    adventure=false;
+                    break;
+                default:
+                    System.out.println("You seem to be touched in the head the villagers of the town put you out of your misery");
+                    System.exit(0);
+
+            }
+            System.out.println("You travel on and encounter another dragon");
+        }
+        System.out.println("Your adventure has ended and these are your spoils of war");
+        for(Item listitem:Main.itemInventory) {
+
+            System.out.println(listitem);
+
+        }
+    }
+
     public void findRandomItem() {
         int numberOfDrops = (int) ((Math.random() * 7) + 1);
         System.out.printf("there are %d drops on this corpse\n", numberOfDrops);
-        while (numberOfDrops >= 0) {
-            int randomNumber = (int)((Math.random()* 8)+ 1);
+        while (numberOfDrops > 0) {
+            int randomNumber = (int)((Math.random()* 7)+ 1);
             switch (randomNumber) {
                 case 1://Crafting Materials
+                    System.out.println("The dragon has dropped a material used in crafting");
                     whichCraftMaterial();
                     numberOfDrops--;
                     break;
                 case 2://Consumables
+                    System.out.println("The dragon has dropped a consumable");
                     whichConsumable();
                     numberOfDrops--;
                     break;
                 case 3://Armor
+                    System.out.println("The dragon has dropped an armor piece");
                     whichArmor();
                     numberOfDrops--;
                     break;
                 case 4://Weapon
+                    System.out.println("The dragon has dropped a mighty weapon");
                     whichWeapon();
-                    randomNumber--;
+                    numberOfDrops--;
                     break;
                 case 5://QuestItem
+                    System.out.println("The dragon has dropped a valuable quest item");
                     whichQuestItem();
+                    numberOfDrops--;
                     break;
                 default://This is a catch for 5 and 6 to show that you picked up a pile of garbage
                     System.out.println("You have found some random piece of garbage");
-                    randomNumber--;
+                    numberOfDrops--;
                     break;
             }
         }
@@ -65,7 +102,6 @@ public class FindItem {
                 break;
         }    }
 
-
     public void whichArmor() {
         int armorItem = (int) ((Math.random() * 5) + 1);
         switch (armorItem) {
@@ -83,7 +119,6 @@ public class FindItem {
                 break;
         }
     }
-
 
     public void whichWeapon() {
         int oneOrTwo = (int) ((Math.random() * 3) + 1);
@@ -114,7 +149,6 @@ public class FindItem {
             }
         }
     }
-
 
     public void whichQuestItem() {
         int questItem = (int) ((Math.random() * 4) + 1);
